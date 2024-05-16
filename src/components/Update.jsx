@@ -20,7 +20,7 @@ function Update() {
 
   useEffect(() => {
     getProductDetails();
-  })
+  },[])
 
   const getProductDetails = async () => {
     setLoading(true);
