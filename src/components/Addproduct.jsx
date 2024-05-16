@@ -20,6 +20,12 @@ const handleAdd = async ()=>{
    });
    result = await result.json()
    console.log(result)
+   setTitle("")
+ setCategory("")
+ setPrice("")
+ setDescription("")
+ setImageurl("")
+   
 }
 
 
