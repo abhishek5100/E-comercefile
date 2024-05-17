@@ -18,17 +18,13 @@ const [show,setShow] = useState(JSON.parse(localStorage.getItem("showData")))
   return (
     <div>
       <Navbar setData={setShow} data={show} />
-     <Routes>
+  <Routes>
      <Route path="/" element={<Signup setData={setShow} showdata={show} />}/>
-      <Route path="/homepage" element={<Homepage/>}/>
+      <Route path={show? "/" : "/homepage"} element={<Homepage/>}/>
       <Route path="/login" element={<Login  setData={setShow}  showdata={show} />}/>
-      <Route path="/admin" element={<Admin/>}/>
-      <Route path="/addproduct" element={<Addproduct/>}/>
-      <Route path="/update/:id" element={<Update/>}/>
-
-
-
-
+      <Route path={show? "/" : "/admin"} element={<Admin/>}/>
+      <Route path={show? "/" : "/addproduct"} element={<Addproduct/>}/>
+      <Route path={show? "/" : "/update/:id"} element={<Update/>}/>
      </Routes>
     </div>
   );
