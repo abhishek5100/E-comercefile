@@ -56,8 +56,6 @@ function Signup(props) {
       navigate("/login")
     },5000)
    
-
-localStorage.setItem("showData",JSON.stringify(false))
 props.setData(JSON.parse(localStorage.getItem("showData")))
 
     
