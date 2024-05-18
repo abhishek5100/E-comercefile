@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
 import Homepage from "./components/Homepage";
-import {useEffect,useState } from "react";
+import {useState} from "react";
 import Navbar from "./components/Navbar";
 import Admin from "./components/Admin";
 import Addproduct from "./components/Addproduct";
@@ -11,13 +11,15 @@ import Update from "./components/Update";
 
 function App() {
 
-const [show,setShow] = useState(JSON.parse(localStorage.getItem("showData")))
 
-useEffect(() => {
   if (localStorage.getItem("showData") === null) {
     localStorage.setItem("showData", JSON.stringify(true));
   }
-}, []);
+  
+  
+const [show,setShow] = useState(JSON.parse(localStorage.getItem("showData")))
+
+
 
   return (
     <div>
