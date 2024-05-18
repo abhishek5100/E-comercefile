@@ -106,11 +106,15 @@ props.setData(JSON.parse(localStorage.getItem("showData")))
       />
       {errors.confirmPassword && <p className="text-red-500">{errors.confirmPassword}</p>}
 
-      <div>
+      <div className="flex">
         <button type="button" className="border p-2 rounded-md px-5 bg-[lightblue]" onClick={handleSignup}>
           Signup
         </button>
-      
+
+              <button type="button" className="border block md:hidden p-2 rounded-md px-5 bg-[lightblue]" onClick={handleSignup}>
+        <Link to="/login"><li className=' list-none hover:text-red-400 hover:underline'>login</li></Link>
+
+        </button>
       </div>
 
     </div>
