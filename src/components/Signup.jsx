@@ -54,8 +54,9 @@ function Signup(props) {
     setTimeout(()=>{
       localStorage.setItem('username', JSON.stringify(data));
       navigate("/login")
-    },5000)
-   
+    },3000)
+       localStorage.setItem("showData",JSON.stringify(true))
+
 props.setData(JSON.parse(localStorage.getItem("showData")))
 
     
