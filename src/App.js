@@ -13,9 +13,11 @@ function App() {
 
 const [show,setShow] = useState(JSON.parse(localStorage.getItem("showData")))
 
-useEffect(()=>{
-setShow(true)
-},[])
+useEffect(() => {
+  if (localStorage.getItem("showData") === null) {
+    localStorage.setItem("showData", JSON.stringify(true));
+  }
+}, []);
 
   return (
     <div>
