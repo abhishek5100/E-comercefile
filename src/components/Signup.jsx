@@ -70,7 +70,7 @@ props.setData(JSON.parse(localStorage.getItem("showData")))
         <ToastContainer />
       <h1>sign up here</h1>
       <input
-        className="w-fit rounded-md p-2 md:px-5 px-1  border-blue-600 border"
+        className=" w-[300px] md:w-fit rounded-md p-2 md:px-5 px-1  border-blue-600 border"
         type="text"
         placeholder="Username"
         name="username"
@@ -79,7 +79,7 @@ props.setData(JSON.parse(localStorage.getItem("showData")))
       />
       {errors.username && <p className="text-red-500">{errors.username}</p>}
       <input
-        className="w-fit rounded-md p-2 md:px-5 px-1 border-blue-600 border"
+        className=" w-[300px] md:w-fit rounded-md p-2 md:px-5 px-1 border-blue-600 border"
         type="email"
         placeholder="Email"
         name="email"
@@ -88,7 +88,7 @@ props.setData(JSON.parse(localStorage.getItem("showData")))
       />
       {errors.email && <p className="text-red-500">{errors.email}</p>}
       <input
-        className="w-fit rounded-md p-2 md:px-5 px-1 border-blue-600 border"
+        className=" w-[300px] md:w-fit rounded-md p-2 md:px-5 px-1 border-blue-600 border"
         type="password"
         placeholder="Password"
         name="password"
@@ -97,7 +97,7 @@ props.setData(JSON.parse(localStorage.getItem("showData")))
       />
       {errors.password && <p className="text-red-500">{errors.password}</p>}
       <input
-        className="w-fit rounded-md p-2 md:px-5 px-1  border-blue-600 border"
+        className=" w-[300px] md:w-fit rounded-md p-2 md:px-5 px-1  border-blue-600 border"
         type="password"
         placeholder="Confirm Password"
         name="confirmPassword"
