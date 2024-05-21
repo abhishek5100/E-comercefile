@@ -32,7 +32,7 @@ function Homepage() {
           {
             data && data.map((value, index) => {
               return (
-                <div key={index} className=' p-5 w-[350px]   my-10 shadow-2xl flex flex-col  text-center col-span-1'>
+                <div key={index} className=' p-5 w-fit   my-10 shadow-2xl flex flex-col  text-center col-span-1'>
                   <div className='h-fit w-fit flex items-center  overflow-hidden '>
                     <img src={value.image} className='hover:scale-150 h-[200px] w-[400px] object-contain duration-1000 hover:cursor-zoom-out' />
                   </div>
