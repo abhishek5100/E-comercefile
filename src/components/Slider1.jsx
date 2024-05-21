@@ -28,26 +28,26 @@ const Slider1 = () => {
        <div className='p-5'>
          <Slider {...settings}>
             <div>
-                <img src={pic1} alt="" />
+                <img src={pic1} alt="" className='h-[150px] md:h-[350px] object-cover'/>
             </div>
           
             <div>
-                <img src={pic3} alt="" />
+                <img src={pic3} alt="" className='h-[150px] md:h-[350px] object-cover'/>
             </div>
              <div>
-                <img src={pic4} alt="" />
+                <img src={pic4} alt="" className='h-[150px] md:h-[350px] object-cover'/>
             </div> 
             <div>
-                <img src={pic5} alt="" />
+                <img src={pic5} alt="" className='h-[150px] md:h-[350px] object-cover'/>
             </div>
              <div>
-                <img src={pic6} alt="" />
+                <img src={pic6} alt="" className='h-[150px] md:h-[350px] object-cover' />
             </div> 
             <div>
-                <img src={pic7} alt="" />
+                <img src={pic7} alt="" className='h-[150px] md:h-[350px] object-cover'/>
             </div> 
             <div>
-                <img src={pic8} alt="" />
+                <img src={pic8} alt="" className='h-[150px] md:h-[350px] object-cover'/>
             </div> 
         
             {/* Add more slides as needed */}
