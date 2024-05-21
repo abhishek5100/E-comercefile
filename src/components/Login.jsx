@@ -42,7 +42,7 @@ function Login(props) {
       <h1 className='font-bold '>Login here</h1>
       <ToastContainer />
       <input
-        className="w-fit rounded-md p-2 px-5 border"
+        className="w-[300px] md:w-fit rounded-md p-2 px-5 border"
         type="text"
         name="username"
         placeholder="Username"
@@ -50,7 +50,7 @@ function Login(props) {
         onChange={handleInput}
       />
       <input
-        className="w-fit rounded-md p-2 px-5 border"
+        className="w-[300px] md:w-fit rounded-md p-2 px-5 border"
         type="password"
         name="password"
         placeholder="Password"
